@@ -1,5 +1,6 @@
 ﻿using FoodStore.Models;
 using FoodStoreApp1_2025.Controllers;
+using FoodStoreApp1_2025.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 
@@ -13,5 +14,6 @@ namespace FoodStore.Data
         {
         }
         public DbSet<Category> Category { get; set; }
+        public DbSet<Manufacturers> Manufacturers { get; set; }
     }
 }
