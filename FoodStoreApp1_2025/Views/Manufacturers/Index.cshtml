@@ -25,7 +25,9 @@
                     <th>
                         Описание
                     </th>
-                    <th></th>
+                    <th>
+                        Рейтинг
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -33,7 +35,8 @@
                 {
                     <tr>
                         <td width="50%">@manufacturers.Title</td>
-@*                         <td width="30%">@category.Description</td> *@
+                        <td width="30%">@manufacturers.Description</td>
+                        <td width="10%">@manufacturers.Rating</td>
                         <td class="text-center">
                             <div class="w-75 btn-group" role="group">
                                 <a asp-controller="Manufacturers" asp-route-Id="@manufacturers.Id" asp-action="Edit" class="btn btn-primary mx-2">
